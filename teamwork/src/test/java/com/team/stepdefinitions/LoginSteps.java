@@ -15,7 +15,7 @@ public class LoginSteps {
 
     @Given("^I navigated to home$")
     public void i_navigated_to_home() throws Throwable {
-        WebDriver driver = DriverConfig.getDriver();
+        WebDriver driver = DriverConfig.getDriver("browser");
         driver.get(System.getenv("website"));
     }
 
